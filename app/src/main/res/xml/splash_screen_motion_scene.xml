@@ -43,12 +43,16 @@
             android:text="Bus Timer"
             android:textColor="#ffffff"
             android:textSize="25sp"
-            android:fontFamily="@font/cousine"
+            android:shadowColor="#ffffff"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="3"
+            android:fontFamily="@font/droid_sans"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintHorizontal_bias="0.498"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/animation_gif"
+            motion:layout_constraintTop_toBottomOf="@+id/bus"
             motion:layout_constraintVertical_bias="0.065" />
     </ConstraintSet>
 
@@ -60,12 +64,16 @@
             android:text="Bus Timer"
             android:textColor="#ffffff"
             android:textSize="25sp"
-            android:fontFamily="@font/cousine"
+            android:shadowColor="#ffffff"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="3"
+            android:fontFamily="@font/droid_sans"
             motion:layout_constraintBottom_toBottomOf="parent"
             motion:layout_constraintEnd_toEndOf="parent"
             motion:layout_constraintHorizontal_bias="0.498"
             motion:layout_constraintStart_toStartOf="parent"
-            motion:layout_constraintTop_toBottomOf="@+id/animation_gif"
+            motion:layout_constraintTop_toBottomOf="@+id/bus"
             motion:layout_constraintVertical_bias="0.065" />
     </ConstraintSet>
 </MotionScene>

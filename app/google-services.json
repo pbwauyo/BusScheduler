@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "547616390072",
+    "firebase_url": "https://busalert-642a8.firebaseio.com",
+    "project_id": "busalert-642a8",
+    "storage_bucket": "busalert-642a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547616390072:android:8d5cced78767c1ca",
+        "android_client_info": {
+          "package_name": "com.example.busscheduler"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547616390072-n5cdoggmnrnkds5vppb3hqqu48oq2lhv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.busscheduler",
+            "certificate_hash": "4cad7ad984619320f521feba540d125e1a9d2b90"
+          }
+        },
+        {
+          "client_id": "547616390072-k52574akgc39thth6pepn20f5qplu1fm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-Zehb2jfRsNsS35QTEvBkyyDQmlHD0pg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547616390072-k52574akgc39thth6pepn20f5qplu1fm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -2,15 +2,16 @@ package com.example.busscheduler;
 
 import android.content.Intent;
 import android.os.Handler;
-import android.support.constraint.motion.MotionLayout;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.motion.widget.MotionLayout;
 
 import com.bumptech.glide.Glide;
 
 public class SplashScreenActivity extends AppCompatActivity {
-    ImageView gifImageView;
+    ImageView busImageView;
     MotionLayout motionLayout;
 
     @Override
@@ -18,14 +19,15 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        gifImageView = findViewById(R.id.animation_gif);
+        busImageView = findViewById(R.id.bus);
         motionLayout = findViewById(R.id.splash_screen_motion_layout);
-
         motionLayout.transitionToEnd();
 
         Glide.with(this)
-                .load(R.drawable.bus_2)
-                .into(gifImageView);
+                //.asGif()
+                .load(R.drawable.front_bus)
+                .fitCenter()
+                .into(busImageView);
 
         new Handler().postDelayed(new Runnable() {
             @Override

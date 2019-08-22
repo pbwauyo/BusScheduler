@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#4B0082</color>
     <color name="colorAccent">#8B4C97</color>
     <color name="indigo">#8C51B6</color>
+    <color name="cardViewTextColor">#BE95DB</color>
+    <color name="transparentIndigo">#998C51B6</color>
 </resources>
