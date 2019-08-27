@@ -5,26 +5,48 @@
 
     <application
         android:allowBackup="true"
+        android:appComponentFactory="whateverString"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        tools:replace="android:appComponentFactory"
-        android:appComponentFactory="whateverString"
-        android:theme="@style/AppTheme">
-        <activity android:name=".SplashScreenActivity"
+        android:theme="@style/AppTheme"
+        tools:replace="android:appComponentFactory">
+        <service
+            android:name=".services.NotificationService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activities.BusActivity"
+            android:label="Buses" />
+        <activity android:name=".activities.TopActivity" />
+        <activity android:name=".activities.BusStopSearchActivity" />
+        <activity
+            android:name=".SplashScreenActivity"
             android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/front_bus"/>
+
+        <meta-data android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/transparentIndigo"/>
     </application>
 
 </manifest>

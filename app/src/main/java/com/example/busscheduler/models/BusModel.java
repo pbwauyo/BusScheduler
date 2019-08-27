@@ -2,38 +2,22 @@ package com.example.busscheduler.models;
 
 public class BusModel {
 
-    private String arrivalTime, departureTime, stationName, busNumber, arrivalDuration;
+    private String busNumber, busName, busStopNumber, busDistance, busCurrentCapacity, busArrivalDuration, busStopPosition, busRoute, busDetails, busUniqueNumber;
 
-    public BusModel(String arrivalTime, String departureTime, String stationName, String busNumber, String arrivalDuration) {
-        this.arrivalTime = arrivalTime;
-        this.departureTime = departureTime;
-        this.stationName = stationName;
+    public BusModel() {
+    }
+
+    public BusModel(String busNumber, String busName, String busStopID, String busDistance, String busCurrentCapacity, String busArrivalDuration, String busStopParkingPoint, String busRoute, String busDetails, String busUniqueNumber) {
         this.busNumber = busNumber;
-        this.arrivalDuration = arrivalDuration;
-    }
-
-    public String getArrivalTime() {
-        return arrivalTime;
-    }
-
-    public void setArrivalTime(String arrivalTime) {
-        this.arrivalTime = arrivalTime;
-    }
-
-    public String getDepartureTime() {
-        return departureTime;
-    }
-
-    public void setDepartureTime(String departureTime) {
-        this.departureTime = departureTime;
-    }
-
-    public String getStationName() {
-        return stationName;
-    }
-
-    public void setStationName(String stationName) {
-        this.stationName = stationName;
+        this.busName = busName;
+        this.busStopNumber = busStopID;
+        this.busDistance = busDistance;
+        this.busCurrentCapacity = busCurrentCapacity;
+        this.busArrivalDuration = busArrivalDuration;
+        this.busStopPosition = busStopParkingPoint;
+        this.busRoute = busRoute;
+        this.busDetails = busDetails;
+        this.busUniqueNumber = busUniqueNumber;
     }
 
     public String getBusNumber() {
@@ -44,11 +28,75 @@ public class BusModel {
         this.busNumber = busNumber;
     }
 
-    public String getArrivalDuration() {
-        return arrivalDuration;
+    public String getBusName() {
+        return busName;
     }
 
-    public void setArrivalDuration(String arrivalDuration) {
-        this.arrivalDuration = arrivalDuration;
+    public void setBusName(String busName) {
+        this.busName = busName;
+    }
+
+    public String getBusStopNumber() {
+        return busStopNumber;
+    }
+
+    public void setBusStopNumber(String busStopNumber) {
+        this.busStopNumber = busStopNumber;
+    }
+
+    public String getBusDistance() {
+        return busDistance;
+    }
+
+    public void setBusDistance(String busDistance) {
+        this.busDistance = busDistance;
+    }
+
+    public String getBusCurrentCapacity() {
+        return busCurrentCapacity;
+    }
+
+    public void setBusCurrentCapacity(String busCurrentCapacity) {
+        this.busCurrentCapacity = busCurrentCapacity;
+    }
+
+    public String getBusArrivalDuration() {
+        return busArrivalDuration;
+    }
+
+    public void setBusArrivalDuration(String busArrivalDuration) {
+        this.busArrivalDuration = busArrivalDuration;
+    }
+
+    public String getBusStopPosition() {
+        return busStopPosition;
+    }
+
+    public void setBusStopPosition(String busStopPosition) {
+        this.busStopPosition = busStopPosition;
+    }
+
+    public String getBusRoute() {
+        return busRoute;
+    }
+
+    public void setBusRoute(String busRoute) {
+        this.busRoute = busRoute;
+    }
+
+    public String getBusDetails() {
+        return busDetails;
+    }
+
+    public void setBusDetails(String busDetails) {
+        this.busDetails = busDetails;
+    }
+
+    public String getBusUniqueNumber() {
+        return busUniqueNumber;
+    }
+
+    public void setBusUniqueNumber(String busUniqueNumber) {
+        this.busUniqueNumber = busUniqueNumber;
     }
 }

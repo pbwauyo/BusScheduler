@@ -30,7 +30,7 @@
                 motion:wavePeriod="0"
                 motion:waveOffset="0dp"
                 motion:waveShape="bounce"
-                android:translationY="40dp"/>
+                android:translationY="30dp"/>
 
         </KeyFrameSet>
     </Transition>
@@ -65,8 +65,8 @@
             android:textColor="#ffffff"
             android:textSize="25sp"
             android:shadowColor="#ffffff"
-            android:shadowDx="0"
-            android:shadowDy="0"
+            android:shadowDx="1"
+            android:shadowDy="1"
             android:shadowRadius="3"
             android:fontFamily="@font/droid_sans"
             motion:layout_constraintBottom_toBottomOf="parent"

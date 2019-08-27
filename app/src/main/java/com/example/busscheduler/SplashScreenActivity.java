@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.motion.widget.MotionLayout;
 
 import com.bumptech.glide.Glide;
+import com.example.busscheduler.activities.TopActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
     ImageView busImageView;
@@ -24,7 +25,6 @@ public class SplashScreenActivity extends AppCompatActivity {
         motionLayout.transitionToEnd();
 
         Glide.with(this)
-                //.asGif()
                 .load(R.drawable.front_bus)
                 .fitCenter()
                 .into(busImageView);
@@ -32,7 +32,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+                startActivity(new Intent(SplashScreenActivity.this, TopActivity.class));
                 finish();
 
             }

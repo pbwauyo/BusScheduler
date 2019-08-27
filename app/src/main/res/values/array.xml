@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="google_progress_bar_colors">
+        <item>#00A1DE</item>
+        <item>#fad201</item>
+        <item>#20603d</item>
+        <item>#e5be01</item>
+    </array>
+
+</resources>
